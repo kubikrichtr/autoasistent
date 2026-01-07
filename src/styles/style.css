@@ -545,7 +545,8 @@ ul {
         left: 0;
         width: 100%;
         background: var(--color-white);
-        padding: 2rem;
+        padding: 4rem 2rem 2rem;
+        /* More top padding for close button space */
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         clip-path: circle(0% at 100% 0);
         transition: clip-path 0.5s ease-in-out;
@@ -557,8 +558,14 @@ ul {
 
     .nav__list {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 2rem;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.25rem;
+    }
+
+    .nav__link {
+        display: block;
+        padding: 0.5rem;
+        /* Larger touch target */
     }
 }

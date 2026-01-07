@@ -16,11 +16,10 @@
         rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/sections.css">
+
 
     <!-- Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+
 </head>
 
 <body>
@@ -34,6 +33,7 @@
                 <ul class="nav__list">
                     <li><a href="#sluzby" class="nav__link">Služby</a></li>
                     <li><a href="#proces" class="nav__link">Jak to funguje</a></li>
+                    <li><a href="#nabidka" class="nav__link">Nabídka vozů</a></li>
                     <li><a href="#reference" class="nav__link">Reference</a></li>
                     <li><a href="#faq" class="nav__link">FAQ</a></li>
                     <li><a href="#kontakt" class="nav__link">Kontakt</a></li>
@@ -360,6 +360,75 @@
             </div>
         </section>
 
+        <!-- Car Sales Section -->
+        <section id="nabidka" class="section car-sales bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Aktuální nabídka vozů</h2>
+                    <p class="section-subtitle">Prověřené vozy ihned k odběru. S garancí původu a stavu.</p>
+                </div>
+
+                <div class="cars-grid">
+                    <!-- Car 1 -->
+                    <article class="car-card">
+                        <div class="car-card__image">
+                            <img src="assets/car-bmw.png" alt="BMW X5 xDrive30d (2024)">
+                            <div class="car-card__badge">Top Stav</div>
+                        </div>
+                        <div class="car-card__content">
+                            <h3 class="car-card__title">BMW X5 xDrive30d M-Packet</h3>
+                            <div class="car-card__specs">
+                                <span><i data-lucide="calendar"></i> 2024</span>
+                                <span><i data-lucide="gauge"></i> 15 000 km</span>
+                                <span><i data-lucide="fuel"></i> Diesel</span>
+                            </div>
+                            <div class="car-card__price">1 850 000 Kč</div>
+                            <button class="btn btn--outline-dark btn--full car-order-btn"
+                                data-car="BMW X5 xDrive30d">Mám zájem</button>
+                        </div>
+                    </article>
+
+                    <!-- Car 2 -->
+                    <article class="car-card">
+                        <div class="car-card__image">
+                            <img src="assets/car-audi.png" alt="Audi A6 Avant (2023)">
+                            <div class="car-card__badge">DPH</div>
+                        </div>
+                        <div class="car-card__content">
+                            <h3 class="car-card__title">Audi A6 Avant 50 TDI Quattro</h3>
+                            <div class="car-card__specs">
+                                <span><i data-lucide="calendar"></i> 2023</span>
+                                <span><i data-lucide="gauge"></i> 42 000 km</span>
+                                <span><i data-lucide="fuel"></i> Diesel</span>
+                            </div>
+                            <div class="car-card__price">1 290 000 Kč</div>
+                            <button class="btn btn--outline-dark btn--full car-order-btn" data-car="Audi A6 Avant">Mám
+                                zájem</button>
+                        </div>
+                    </article>
+
+                    <!-- Car 3 -->
+                    <article class="car-card">
+                        <div class="car-card__image">
+                            <img src="assets/car-skoda.png" alt="Škoda Superb L&K (2024)">
+                            <div class="car-card__badge">Nové</div>
+                        </div>
+                        <div class="car-card__content">
+                            <h3 class="car-card__title">Škoda Superb L&K 2.0 TDI</h3>
+                            <div class="car-card__specs">
+                                <span><i data-lucide="calendar"></i> 2024</span>
+                                <span><i data-lucide="gauge"></i> 5 km</span>
+                                <span><i data-lucide="fuel"></i> Diesel</span>
+                            </div>
+                            <div class="car-card__price">1 050 000 Kč</div>
+                            <button class="btn btn--outline-dark btn--full car-order-btn"
+                                data-car="Škoda Superb L&K">Mám zájem</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact & Form -->
         <section id="kontakt" class="section contact bg-white">
             <div class="container contact__container">
@@ -464,10 +533,54 @@
         </footer>
     </main>
 
-    <script src="scripts/main.js"></script>
+    <!-- Car Detail Modal -->
+    <div id="carModal" class="modal" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-close="true"></div>
+        <div class="modal__container" role="dialog" aria-modal="true">
+            <button class="modal__close" aria-label="Zavřít" data-close="true"><i data-lucide="x"></i></button>
+
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h2 class="modal__title" id="modalTitle">Název vozu</h2>
+                    <div class="modal__price" id="modalPrice">0 Kč</div>
+                </div>
+
+                <div class="modal__gallery">
+                    <img id="modalImage" src="" alt="Detail vozu" class="modal__main-img">
+                    <!-- Placeholder for potential gallery thumbnails -->
+                </div>
+
+                <div class="modal__body">
+                    <div class="modal__specs" id="modalSpecs">
+                        <!-- Specs injected via JS -->
+                    </div>
+
+                    <div class="modal__description">
+                        <h3>O voze</h3>
+                        <p id="modalDesc">Popis vozu...</p>
+                    </div>
+
+                    <div class="modal__video">
+                        <div class="video-container">
+                            <iframe id="modalVideoFrame" src="" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal__footer">
+                    <button class="btn btn--primary btn--full modal-order-btn">Mám zájem o tento vůz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         lucide.createIcons();
     </script>
+    <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
