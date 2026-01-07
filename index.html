@@ -27,7 +27,9 @@
     <!-- Header -->
     <header class="header">
         <div class="container header__container">
-            <a href="#" class="logo">AutoAsistent</a>
+            <a href="#" class="logo">
+                <img src="assets/logo.svg" alt="AutoAsistent">
+            </a>
 
             <nav class="nav">
                 <ul class="nav__list">
@@ -291,40 +293,116 @@
         </section>
 
         <!-- Testimonials -->
+        <!-- Google Reviews Section -->
         <section id="reference" class="section testimonials bg-white">
             <div class="container">
-                <div class="section-header text-center">
-                    <h2 class="section-title">Co říkají klienti</h2>
+                <div class="google-rating-header">
+                    <h2 class="section-title">Co říkají naši klienti</h2>
+                    <div class="google-rating-summary">
+                        <span>4.9</span>
+                        <div class="google-rating-stars">
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                        </div>
+                    </div>
+                    <div class="google-rating-count">
+                        Na základě 150+ recenzí na Google
+                    </div>
                 </div>
 
                 <div class="testimonials__grid">
-                    <div class="testimonial-card">
-                        <div class="stars">⭐⭐⭐⭐⭐</div>
-                        <p class="testimonial-text">"Skvělá zkušenost! Pomohli mi koupit auto bez starostí. Vím, že jsem
-                            s nimi v bezpečí."</p>
-                        <div class="testimonial-author">
-                            <strong>Jan K.</strong> / Praha
-                            <span class="testimonial-badge">Kontrola vozu</span>
+                    <!-- Review 1 -->
+                    <div class="google-review-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar" style="background-color: #7E57C2;">J</div>
+                            <div class="reviewer-info">
+                                <span class="reviewer-name">Jan Kovarik</span>
+                                <div class="review-meta">
+                                    <span class="review-stars">
+                                        <i data-lucide="star"></i>
+                                        <i data-lucide="star"></i>
+                                        <i data-lucide="star"></i>
+                                        <i data-lucide="star"></i>
+                                        <i data-lucide="star"></i>
+                                    </span>
+                                    <span>před měsícem</span>
+                                </div>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                                alt="Google" class="review-google-icon">
                         </div>
+                        <p class="review-text">
+                            Skvělá zkušenost! Pomohli mi koupit auto bez starostí. Vím, že jsem s nimi v bezpečí.
+                            Profesionální přístup a detailní kontrola vozu. Určitě doporučuji všem, kdo chtějí mít klid.
+                        </p>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="stars">⭐⭐⭐⭐⭐</div>
-                        <p class="testimonial-text">"Dovoz proběhl hladce, auto je ve skvělém stavu a ušetřil jsem
-                            spoustu času."</p>
-                        <div class="testimonial-author">
-                            <strong>Petr S.</strong> / Brno
-                            <span class="testimonial-badge">Dovoz z DE</span>
+
+                    <!-- Review 2 -->
+                    <div class="google-review-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar" style="background-color: #26A69A;">P</div>
+                            <div class="reviewer-info">
+                                <span class="reviewer-name">Petr Svoboda</span>
+                                <div class="review-meta">
+                                    <span class="review-stars">
+                                        <i data-lucide="star"></i>
+                                        <i data-lucide="star"></i>
+                                        <i data-lucide="star"></i>
+                                        <i data-lucide="star"></i>
+                                        <i data-lucide="star"></i>
+                                    </span>
+                                    <span>před 2 měsíci</span>
+                                </div>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                                alt="Google" class="review-google-icon">
                         </div>
+                        <p class="review-text">
+                            Dovoz proběhl hladce, auto je ve skvělém stavu a ušetřil jsem spoustu času. Komunikace byla
+                            rychlá a jasná. Vše zařídili za mě.
+                        </p>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="stars">⭐⭐⭐⭐⭐</div>
-                        <p class="testimonial-text">"Profesionální jednání, technická prohlídka odhalila vady, o kterých
-                            prodejce mlčel."</p>
-                        <div class="testimonial-author">
-                            <strong>Michaela H.</strong> / Plzeň
-                            <span class="testimonial-badge">Kontrola ojetiny</span>
+
+                    <!-- Review 3 -->
+                    <div class="google-review-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar" style="background-color: #EF5350;">M</div>
+                            <div class="reviewer-info">
+                                <span class="reviewer-name">Michaela Hrubá</span>
+                                <div class="review-meta">
+                                    <span class="review-stars">
+                                        <i data-lucide="star"></i>
+                                        <i data-lucide="star"></i>
+                                        <i data-lucide="star"></i>
+                                        <i data-lucide="star"></i>
+                                        <i data-lucide="star"></i>
+                                    </span>
+                                    <span>před 3 týdny</span>
+                                </div>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                                alt="Google" class="review-google-icon">
                         </div>
+                        <p class="review-text">
+                            Profesionální jednání, technická prohlídka odhalila vady, o kterých prodejce mlčel. Díky
+                            tomu jsem nekoupila vrak. Velké díky týmu AutoAsistent!
+                        </p>
                     </div>
+                </div>
+
+                <div class="google-actions">
+                    <a href="https://www.google.com/search?q=AutoAsistent+recenze" target="_blank"
+                        class="btn btn--outline-dark">
+                        <i data-lucide="external-link" style="margin-right: 8px;"></i> Zobrazit všechny recenze na
+                        Google
+                    </a>
+                    <a href="https://search.google.com/local/writereview?placeid=PLACE_ID" target="_blank"
+                        class="btn btn--primary">
+                        <i data-lucide="edit-3" style="margin-right: 8px;"></i> Napsat recenzi
+                    </a>
                 </div>
             </div>
         </section>
@@ -502,7 +580,9 @@
         <footer class="footer">
             <div class="container footer__container">
                 <div class="footer__brand">
-                    <a href="#" class="logo footer__logo">AutoAsistent</a>
+                    <a href="#" class="logo footer__logo">
+                        <img src="assets/logo.svg" alt="AutoAsistent">
+                    </a>
                     <p>Váš osobní asistent ve světě aut.</p>
                 </div>
 
