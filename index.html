@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoAsistent | Váš osobní asistent ve světě aut</title>
+    <meta name="description"
+        content="Bezpečná cesta k vašemu dalšímu autu. Komplexní asistent při nákupu, dovozu a prodeji vozů. Nezávislá kontrola, transparentní ceny.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/sections.css">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">AutoAsistent</a>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#sluzby" class="nav__link">Služby</a></li>
+                    <li><a href="#proces" class="nav__link">Jak to funguje</a></li>
+                    <li><a href="#reference" class="nav__link">Reference</a></li>
+                    <li><a href="#faq" class="nav__link">FAQ</a></li>
+                    <li><a href="#kontakt" class="nav__link">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="#kontakt" class="btn btn--primary">Nezávazná poptávka</a>
+                <button class="theme-toggle" aria-label="Přepnout tmavý režim">
+                    <i data-lucide="moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__bg-pattern"></div>
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <div class="badge">
+                        <i data-lucide="car"></i> Over 500+ vozů prověřeno
+                    </div>
+                    <h1 class="hero__title">Bezpečná cesta k vašemu dalšímu autu</h1>
+                    <p class="hero__perex">
+                        Pomůžeme vám s výběrem, kontrolou, dovozem i prodejem vozu – od prvního nápadu až po přepis v
+                        technickém průkazu. Osobní asistent po každém kroku.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="#kontakt" class="btn btn--primary btn--lg">Začít teď</a>
+                        <a href="#sluzby" class="btn btn--outline btn--lg">Zjistit více</a>
+                    </div>
+
+                    <ul class="hero__benefits">
+                        <li><i data-lucide="check" class="text-accent"></i> Nezávislá kontrola</li>
+                        <li><i data-lucide="check" class="text-accent"></i> Bez skrytých</li>
+                        <li><i data-lucide="check" class="text-accent"></i> Asistujeme vám</li>
+                        <li><i data-lucide="check" class="text-accent"></i> Jasné ceny</li>
+                    </ul>
+
+                    <div class="hero__chips">
+                        <div class="chip">
+                            <i data-lucide="search"></i> Nezávislá kontrola vozu
+                        </div>
+                        <div class="chip">
+                            <i data-lucide="handshake"></i> Zastoupíme vás
+                        </div>
+                        <div class="chip">
+                            <i data-lucide="globe"></i> Dovoz z EU
+                        </div>
+                        <div class="chip">
+                            <i data-lucide="wallet"></i> Transparentní ceny
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__visual">
+                    <div class="hero__image-wrapper">
+                        <img src="assets/hero-image.png" alt="AutoAsistent specialista a luxusní vůz" class="hero__img">
+
+                        <!-- Floating Elements -->
+                        <div class="float-card float-card--1">
+                            <div class="float-card__icon"><i data-lucide="check-circle"></i></div>
+                            <div class="float-card__text">Technický stav: <strong>100%</strong></div>
+                        </div>
+
+                        <div class="float-card float-card--2">
+                            <div class="float-card__icon"><i data-lucide="file-check"></i></div>
+                            <div class="float-card__text">Dokumentace vyřízena</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Section -->
+        <section class="trust">
+            <div class="container trust__container">
+                <div class="stat-item">
+                    <div class="stat-item__number" data-target="500">0+</div>
+                    <div class="stat-item__label">Vozů prověřeno</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-item__number" data-target="4.9">0</div>
+                    <div class="stat-item__label">Rating od klientů</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-item__number" data-target="1200">0+</div>
+                    <div class="stat-item__label">Spokojených klientů</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-item__number" data-target="98">0%</div>
+                    <div class="stat-item__label">Doporučují přátele</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section id="sluzby" class="section services">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Naše Služby</h2>
+                    <p class="section-subtitle">Komplexní péče o vaše automobilové potřeby</p>
+                </div>
+
+                <div class="services__grid">
+                    <!-- Service 1 -->
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <i data-lucide="wrench"></i>
+                        </div>
+                        <h3 class="service-card__title">Kontrola vozu před koupí</h3>
+                        <p class="service-card__desc">Vyhledáme vhodné auto, zkontrolujeme technický stav, projdeme
+                            historii a pomůžeme vám vyjednat férovou cenu.</p>
+                        <div class="service-card__price">Od 3 500 Kč</div>
+                        <a href="#kontakt" class="service-card__link">Zobrazit detail <i
+                                data-lucide="arrow-right"></i></a>
+                    </article>
+
+                    <!-- Service 2 -->
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <i data-lucide="truck"></i>
+                        </div>
+                        <h3 class="service-card__title">Dovoz vozu ze zahraničí</h3>
+                        <p class="service-card__desc">Zajistíme vyhledání vozu v zahraničí, komunikaci s prodejcem,
+                            fyzickou kontrolu, dopravu do Česka i dokumentaci.</p>
+                        <div class="service-card__price">Od 15 000 Kč</div>
+                        <a href="#kontakt" class="service-card__link">Zobrazit detail <i
+                                data-lucide="arrow-right"></i></a>
+                    </article>
+
+                    <!-- Service 3 -->
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <i data-lucide="target"></i>
+                        </div>
+                        <h3 class="service-card__title">Nákup nového vozu</h3>
+                        <p class="service-card__desc">Pomůžeme s výběrem nového auta, získáním cenových nabídek,
+                            komunikací se salonem a finálním převzetím.</p>
+                        <div class="service-card__price">Od 2%</div>
+                        <a href="#kontakt" class="service-card__link">Zobrazit detail <i
+                                data-lucide="arrow-right"></i></a>
+                    </article>
+
+                    <!-- Service 4 -->
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <i data-lucide="credit-card"></i>
+                        </div>
+                        <h3 class="service-card__title">Prodej & Výkup ojetých vozů</h3>
+                        <p class="service-card__desc">Odkoupíme váš vůz či ho prodáme komisně. Zajistíme pojištění,
+                            financování a administrativu.</p>
+                        <div class="service-card__price">Od 8%</div>
+                        <a href="#kontakt" class="service-card__link">Zobrazit detail <i
+                                data-lucide="arrow-right"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Details (Accordion style for timeline) -->
+        <section class="section service-details bg-white">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Jak probíhá spolupráce?</h2>
+                    <p class="section-subtitle">Transparentní proces od A do Z</p>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-step">
+                        <div class="timeline-marker">1</div>
+                        <div class="timeline-content">
+                            <h3>Konzultace a upřesnění požadavků</h3>
+                            <p>Online/telefonicky si ujasníme vaše priority a rozpočet. (max 15 min)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-marker">2</div>
+                        <div class="timeline-content">
+                            <h3>Pomoc s výběrem vhodných vozů</h3>
+                            <p>Filtrujeme nabídky trhu podle vašich kritérií a zkušeností.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-marker">3</div>
+                        <div class="timeline-content">
+                            <h3>Fyzická kontrola vozu</h3>
+                            <p>Karoserie, lak, podvozek, diagnostika, testovací jízda.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-marker">4</div>
+                        <div class="timeline-content">
+                            <h3>Zpráva + vysvětlení</h3>
+                            <p>Detailní report zjištěných vad a doporučení (koupit/nekoupit).</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-marker">5</div>
+                        <div class="timeline-content">
+                            <h3>Vyjednávání a administrativa</h3>
+                            <p>Pomůžeme snížit cenu a vyřídit veškeré papírování.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="section benefits">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Proč AutoAsistent?</h2>
+                </div>
+
+                <div class="benefits__grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i data-lucide="shield-check"></i></div>
+                        <h3>Nezávislý partner</h3>
+                        <p>Stojíme vždy na vaší straně, ne na straně prodejce.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i data-lucide="briefcase"></i></div>
+                        <h3>Technické know-how</h3>
+                        <p>Rozumíme autům i právním kličkám v kupních smlouvách.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i data-lucide="globe"></i></div>
+                        <h3>Zkušenosti z EU</h3>
+                        <p>Dovážíme prověřená auta z Německa i dalších zemí.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i data-lucide="gem"></i></div>
+                        <h3>Prémiový přístup</h3>
+                        <p>Jednáme slušně, profesionálně a bez arogance.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i data-lucide="zap"></i></div>
+                        <h3>Osobní asistent</h3>
+                        <p>Jeden člověk, který řeší vše od prvního hovoru po předání.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i data-lucide="umbrella"></i></div>
+                        <h3>Bezpečnost</h3>
+                        <p>Eliminujeme rizika spojená s nákupem ojetiny.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="reference" class="section testimonials bg-white">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Co říkají klienti</h2>
+                </div>
+
+                <div class="testimonials__grid">
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"Skvělá zkušenost! Pomohli mi koupit auto bez starostí. Vím, že jsem
+                            s nimi v bezpečí."</p>
+                        <div class="testimonial-author">
+                            <strong>Jan K.</strong> / Praha
+                            <span class="testimonial-badge">Kontrola vozu</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"Dovoz proběhl hladce, auto je ve skvělém stavu a ušetřil jsem
+                            spoustu času."</p>
+                        <div class="testimonial-author">
+                            <strong>Petr S.</strong> / Brno
+                            <span class="testimonial-badge">Dovoz z DE</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"Profesionální jednání, technická prohlídka odhalila vady, o kterých
+                            prodejce mlčel."</p>
+                        <div class="testimonial-author">
+                            <strong>Michaela H.</strong> / Plzeň
+                            <span class="testimonial-badge">Kontrola ojetiny</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section faq">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Časté otázky</h2>
+                </div>
+
+                <div class="faq__container">
+                    <details class="faq-item">
+                        <summary>Kolik trvá kontrola vozu? <i data-lucide="plus"></i></summary>
+                        <p>Fyzická kontrola vozu obvykle trvá 60-90 minut v závislosti na typu vozidla a jeho stavu.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Mohu koupit auto bez schůzky s vámi? <i data-lucide="plus"></i></summary>
+                        <p>Ano, pro vozy jezdíme sami a vy dostanete kompletní report s fotodokumentací. Rozhodnutí je
+                            pak na vás.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Jak probíhá dovoz ze zahraničí? <i data-lucide="plus"></i></summary>
+                        <p>Vybereme auto, prověříme historii, zajedeme ho zkontrolovat, koupíme, dovezeme a vyřídíme STK
+                            i přihlášení.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Nabízíte záruku na zkontrolované vozy? <i data-lucide="plus"></i></summary>
+                        <p>Poskytujeme záruku na správnost naší diagnostiky. Na skryté vady motoru ze zákona odpovídá
+                            prodejce, my vám pomůžeme s vymáháním.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Form -->
+        <section id="kontakt" class="section contact bg-white">
+            <div class="container contact__container">
+                <div class="contact__info">
+                    <h2 class="section-title">Nezávazná poptávka</h2>
+                    <p class="contact__desc">Napište nám, jaké auto hledáte nebo s čím potřebujete pomoci. Ozveme se
+                        zpět.</p>
+
+                    <ul class="contact__list">
+                        <li>
+                            <i data-lucide="mail" class="text-secondary"></i>
+                            <a href="mailto:info@autoasistent.cz">info@autoasistent.cz</a>
+                        </li>
+                        <li>
+                            <i data-lucide="phone" class="text-secondary"></i>
+                            <a href="tel:+420777123456">+420 777 123 456</a>
+                        </li>
+                        <li>
+                            <i data-lucide="clock" class="text-secondary"></i>
+                            <span>Po–Pá 9:00–18:00</span>
+                        </li>
+                    </ul>
+
+                    <div class="socials">
+                        <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact__form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Jméno *</label>
+                            <input type="text" id="name" required placeholder="Vaše jméno">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" required placeholder="vas@email.cz">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon *</label>
+                            <input type="tel" id="phone" required placeholder="+420 ...">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Typ služby *</label>
+                            <select id="service" required>
+                                <option value="" disabled selected>Vyberte službu</option>
+                                <option value="kontrola">Kontrola vozu</option>
+                                <option value="dovoz">Dovoz ze zahraničí</option>
+                                <option value="nakup">Nákup nového vozu</option>
+                                <option value="prodej">Prodej / Výkup</option>
+                                <option value="jine">Jiné</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Zpráva</label>
+                            <textarea id="message" rows="4" placeholder="O jaký vůz máte zájem?"></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="gdpr" required>
+                            <label for="gdpr">Souhlasím se zpracováním osobních údajů</label>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Poslat poptávku</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__brand">
+                    <a href="#" class="logo footer__logo">AutoAsistent</a>
+                    <p>Váš osobní asistent ve světě aut.</p>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4>Služby</h4>
+                        <ul>
+                            <li><a href="#">Kontrola vozu</a></li>
+                            <li><a href="#">Dovoz ze zahraničí</a></li>
+                            <li><a href="#">Nákup nového</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4>O nás</h4>
+                        <ul>
+                            <li><a href="#proces">Jak to funguje</a></li>
+                            <li><a href="#reference">Reference</a></li>
+                            <li><a href="#kontakt">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <p>&copy; 2026 AutoAsistent. Všechna práva vyhrazena.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="scripts/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
